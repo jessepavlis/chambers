@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+html, body {
+	background:gray;background-image: url("../city sections/citySectionBG.jpg"); 
+	background-repeat: repeat; 
+background-size:contain;
+font-family: 'Open Sans', sans-serif;}
+
+.container {max-width:100%;}
+
+.logo{text-align:center}
+
+
+
+.map {
+	text-align: center;
+}
+
+.mapSection {
+	background-image: url("../map section/greenBG-cropped.jpg"); 
+	background-repeat: no-repeat; 
+background-size:cover;padding:60px;}
+
+.titleHeader {font-size: 2.2em; 
+	text-transform:uppercase; 
+	font-weight:800; 
+	text-align:center; 
+	vertical-align:top;
+}
+
+.titleHighlight {
+	background-color:#FAD201; 
+	padding-left:5px; 
+	padding-right:5px}
+
+.citiesBar{
+	background-color:#fad201;
+	margin-right:25px;
+	margin-left:25px;
+	margin-bottom:25px;
+	margin-top:-25px;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:.8em;
+	line-height:1.8em;
+	font-weight:800;
+	text-transform:uppercase;
+	letter-spacing:-.03em;
+	
+}
+
+.citiesBar a:hover{
+	background-color:#ffffff;
+	color:#0000;
+	text-decoration:none;
+	
+}
+
+.citiesBar a:link, .citiesBar a:visited, .citiesBar a:active{
+	color:#2B2B2B;
+	text-decoration:none;
+	
+	
+}
+
+.citySection {
+	padding:60px 60px 40px 60px;
+	display: none;
+}
+
+.cityName{
+	font-size:2em;
+font-weight:800;
+text-transform:uppercase;
+color:#fad201;}
+
+.score{ 
+font-size:1em;
+font-weight:800;
+text-transform:uppercase;
+color:#fff;}
+
+.cityText
+{color:#fff;
+	padding-top:10px;
+	padding-bottom:30px;
+font-size:.9em;
+line-height:1.4em;}
+
+.piechart{
+	color:#fff;
+	text-align:center;
+	font-size: 1.2em;
+	line-height:1.2em;
+
+}
+
+.piechartText{
+	font-size:.8em;
+	text-align:left;
+	color:#fff;
+
+}
+
+.cityphotos img {
+	border:solid #B2B2B2 1px }
+
+.backtotop{
+	text-align:right;
+	color:#ffffff;
+	font-weight:800;
+	font-size:.9em;
+	text-transform:uppercase;
+	padding-top:10px;
+	
+}
+
+.backtotop a:hover{
+	color:#9BD18F;
+	text-decoration:none;
+	
+}
+
+.backtotop a:link, .backtotop a:visited, .backtotop a:active{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+hr{
+	 display: none;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 5px;
+border-color:#FAD201}
+
+/*Clickable Map*/
+
+img[usemap], map area{
+	outline: none;
+}
+
+/*City Images*/
+
+.cityphotos img:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 75%;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+	.modal-content {
+		width: 100%;
+	}
+}
